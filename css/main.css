@@ -1,0 +1,165 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #333;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      
+      .post {
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        margin: 5px;
+        background: lightgray;
+        border: black 1px solid;
+        border-radius: 4px;
+      }
+
+      .post:nth-child(even){
+        background: #f2f2f2;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5px;
+      }
+
+      .flex-container a {
+        text-decoration: none;
+      }
+
+      .thumb {
+        width: 61px;
+        height: 61px;
+        background: black;
+        min-width: 61px;
+        background: no-repeat center center/cover;
+        object-fit: cover;
+        padding-top: 1px;
+      }
+      .vote {
+        width: 45px;
+        height: 61px;
+        min-width: 45px;
+        /* background: orange; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .links {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+      }
+      .title {
+        padding-top: 3px;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        font-size: 1.5rem;
+        color: rgb(102, 46, 20);
+      }
+      .description {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+        max-width: 100%;
+        font-size: 1.25rem;
+        padding: 5px;
+        background-color: #e7feff;
+        border: 1px solid black;
+      }
+
+      .time {
+        padding-bottom: 3px;
+      }
+      .time a {
+        text-decoration: none;
+      }
+      .links a {
+        font-size: 0.9rem;
+        padding-right: 5px;
+        text-decoration: none;
+      }
+      .upvote {
+        padding-top: 3px;
+      }
+      .downvote {
+        padding-bottom: 3px;
+      }
+      .number {
+        font-size: 1.25rem;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        position: fixed;
+        background: rgb(151, 151, 151);
+        right: 0;
+        margin-top: 5px;
+        padding: 5px 0 15px 0;
+      }
+      .sidebar h1 {
+        text-align: center;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+      }
+      .sidebar img {
+        padding: 10px 0 10px 0;
+      }
+      .sidebar p {
+        padding: 10px;
+      }
+      .content-container {
+        position: relative;
+        width: calc(100% - 300px);
+      }
+      .submission {
+        background-color: tan;
+        padding: 0.5rem, 0rem, 0.5rem, 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        width: 90%;
+      }
+
+
+      header {
+        padding: 10px;
+        text-align: center;
+        color: greenyellow;
+      }
+
+      @media (max-width: 768px) {
+        .title {
+          font-size: 1rem;
+          padding-right: 5px;
+          position: relative;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+        .links a {
+          font-size: 0.7rem;
+        }
+        .number p {
+          font-size: 0.9rem;
+        }
+        .sidebar {
+          display: none;
+        }
+        .content-container {
+          width: 100%;
+        }
+      }
